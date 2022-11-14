@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Portfolio</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="index2.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+
+<body>
+    <h1>Week 1</h1>
+    <div class="myWeek1">     
+        <h3>Korea's Population Structure</h3>
+        <p>The first chart shows Korea's rapid aging population.</p>
+        <div class="chart" id="Chart1"></div>
+
+        <h3>Korea's Covid Deaths</h3>
+        <p>My second chart looks the deaths caused by Covid-19 in Korea</p>
+        <div class="chart" id="Chart2"> </div>
+    </div>
+</body>
+
+
+<script>
+    //Define charts:
+    var myChart1 = "agingPopulation.json";
+    var myChart2 = "covidDeaths.json";
+
+    // Embed charts:
+    vegaEmbed('#Chart1', myChart1);
+    vegaEmbed('#Chart2', myChart2);
+</script>
+
+</html>
