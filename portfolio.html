@@ -42,6 +42,10 @@
         <h3>IMF Lending Outstanding uncleaned</h3>
         <div class="chart" id="Chart3"> </div>
         
+        <h3>IMF Lending Outstanding cleaned</h3>
+        <div class="chart" id="Chart 4"> </div>
+        <p>1984 looks like the most risky year for the IMF because their lending relative to total USA GDP peaked at 0.45% during that year</p>
+        
     </div>
     
 </body>
@@ -52,11 +56,13 @@
     var myChart1 = "agingPopulation.json";
     var myChart2 = "covidDeaths.json";
     var myChart3 = "IMF_Lending.json";
+    var myChart4 = "IMF_LendingCorrected.json";
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
+    vegaEmbed('#Chart4', myChart4);
 </script>
 
 </html>
