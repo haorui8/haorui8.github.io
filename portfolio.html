@@ -37,16 +37,24 @@
     </div>
     
     <div class="myWeek2">
+        
         <h1>Week 2</h1>
         <h3>IMF Lending Outstanding uncleaned</h3>
         <div class="chart" id="Chart3"> </div>
-        
+
         <h3>IMF Lending Outstanding cleaned</h3>
         <div class="chart" id="Chart4"> </div>
-        <p>1984 looks like the most risky year for the IMF because their lending relative to total USA GDP peaked at 0.45% during that year</p>
-        
+        <p>1984 was the most risky year for the IMF because their lending was equivalent to 0.31% of the world's GDP, the peak in the graph.</p>
     </div>
     
+    <div class="myWeek3"> 
+
+        <h1>Week 3</h1>
+        <h3>Sterling to Dollar Exchange Rate</h3>
+        <div class="chart" id="Chart5"> </div>
+        <div class="chart" id="Chart6"> </div>
+        <p>Because of the huge number of data points, my encoding field types for date and exchange rate has to be temporal and quantitative respectively. I found that using a line chart (second graph) for a large quantity of data visualises it more clearly than a bar chart (first graph) because our attention doesn't become distracted by the mass occupation of space that a line chart wouldn't do. </p>
+    </div>
 </body>
 
 
@@ -56,12 +64,16 @@
     var myChart2 = "covidDeaths.json";
     var myChart3 = "IMF_Lending.json";
     var myChart4 = "IMF_LendingCorrected.json";
+    var myChart5 = "SterlingToDollarExchangeRate1.json"
+    var myChart6 = "SterlingToDollarExchangeRate2.json"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
     vegaEmbed('#Chart2', myChart2);
     vegaEmbed('#Chart3', myChart3);
     vegaEmbed('#Chart4', myChart4);
+    vegaEmbed('#Chart5', myChart5);
+    vegaEmbed('#Chart6', myChart6);
 </script>
 
 </html>
