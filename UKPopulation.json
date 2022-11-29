@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":{
+      "text":"UK Population Age Demographic"
+     },
+    "data": {
+      "values": [{"Ages": "0 to 15 years ", "Year": 1976, "Percent of Population": 24.5}, {"Ages": "0 to 15 years ", "Year": 1986, "Percent of Population": 20.5}, {"Ages": "0 to 15 years ", "Year": 1999, "Percent of Population": 20.4}, {"Ages": "0 to 15 years ", "Year": 2016, "Percent of Population": 18.9}, {"Ages": "0 to 15 years ", "Year": 2019, "Percent of Population": 19.0}, {"Ages": "16 to 64 years ", "Year": 1976, "Percent of Population": 61.2}, {"Ages": "16 to 64 years ", "Year": 1986, "Percent of Population": 64.1}, {"Ages": "16 to 64 years ", "Year": 1999, "Percent of Population": 63.8}, {"Ages": "16 to 64 years ", "Year": 2016, "Percent of Population": 63.1}, {"Ages": "16 to 64 years ", "Year": 2019, "Percent of Population": 62.5}, {"Ages": "65 years and over ", "Year": 1976, "Percent of Population": 14.2}, {"Ages": "65 years and over ", "Year": 1986, "Percent of Population": 15.4}, {"Ages": "65 years and over ", "Year": 1999, "Percent of Population": 15.8}, {"Ages": "65 years and over ", "Year": 2016, "Percent of Population": 18.0}, {"Ages": "65 years and over ", "Year": 2019, "Percent of Population": 18.5}]
+    },
+    
+    "height":300,
+    "width":280,
+  
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Ages"},
+      "y": {"field": "Percent of Population", "type": "quantitative"},
+      "xOffset": {"field": "Year"},
+      "color": {"field": "Year"}
+    }
+  }

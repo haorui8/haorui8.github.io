@@ -55,6 +55,13 @@
         <div class="chart" id="Chart6"> </div>
         <p>Because of the huge number of data points, my encoding field types for date and exchange rate has to be temporal and quantitative respectively. I found that using a line chart (second graph) for a large quantity of data visualises it more clearly than a bar chart (first graph) because our attention doesn't become distracted by the mass occupation of space that a line chart wouldn't do. </p>
     </div>
+
+    <div class="myWeek4"> 
+        <h1>Week 4</h1>
+        <h3>Scraping UK Population Demographic</h3>
+        <div class="chart" id="Chart7"> </div>
+        <p>I chose to scrape from Wikipedia because they have a lot of data on the UK population. Eventually, I chose to scrape data on UK's age demographic.</p>
+    </div>
 </body>
 
 
@@ -66,6 +73,7 @@
     var myChart4 = "IMF_LendingCorrected.json";
     var myChart5 = "SterlingToDollarExchangeRate1.json"
     var myChart6 = "SterlingToDollarExchangeRate2.json"
+    var myChart7 = "UKPopulation.json"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -74,6 +82,7 @@
     vegaEmbed('#Chart4', myChart4);
     vegaEmbed('#Chart5', myChart5);
     vegaEmbed('#Chart6', myChart6);
+    vegaEmbed('#Chart7', myChart7);
 </script>
 
 </html>
