@@ -51,7 +51,7 @@
 
         <h1>Week 3</h1>
         <h3>Sterling to Dollar Exchange Rate</h3>
-        <div class="chart" id="Chart5"> </div>
+        <div class="chart" id="Chart5"> </div>     
         <div class="chart" id="Chart6"> </div>
         <p>Because of the huge number of data points, my encoding field types for date and exchange rate has to be temporal and quantitative respectively. I found that using a line chart (second graph) for a large quantity of data visualises it more clearly than a bar chart (first graph) because our attention doesn't become distracted by the mass occupation of space that a line chart wouldn't do. </p>
     </div>
@@ -62,6 +62,18 @@
         <div class="chart" id="Chart7"> </div>
         <p>I chose to scrape from Wikipedia because they have a lot of data on the UK population. Eventually, I chose to scrape data on UK's age demographic and the colab notebook can be found <a href="https://colab.research.google.com/drive/1gDDX66pHnpO-00IaGWPiuyd9QNuez21T#scrollTo=hM6WXI2UfUM_">here</a>.</p>
     </div>
+
+    <div class="myWeek5"> 
+        <h1>Week 5</h1>
+        <p><a href="https://colab.research.google.com/drive/1hQJmNJa1E6Zqn7u7HekPyY6UxsxaA9YH#scrollTo=zTI4INHtqKiX">Collab Notebook: ONS Loop</a></p>
+        <div class = 'grid_items'>
+            <div class="grid_item" id="Chart8"></div><div class="grid_item" id="Chart9"></div><div class="grid_item" id="Chart10"></div>
+            <div class="grid_item" id="Chart11"></div><div class="grid_item" id="Chart12"></div><div class="grid_item" id="Chart13"></div>
+            <div class="grid_item" id="Chart14"></div><div class="grid_item" id="Chart15"></div><div class="grid_item" id="Chart16"></div>
+        </div>
+    </div>
+
+    <window class="innerwidth"></window>
 </body>
 
 
@@ -74,6 +86,15 @@
     var myChart5 = "SterlingToDollarExchangeRate1.json"
     var myChart6 = "SterlingToDollarExchangeRate2.json"
     var myChart7 = "UKPopulation.json"
+    var myChart8 = "ONS_Inflation_Alcohol&tobacco.json"
+    var myChart9 = "ONS_Inflation_FoodProducts.json"
+    var myChart10 = "ONS_Inflation_SportsMajorItems.json"
+    var myChart11 = "ONS_Inflation_PersonalComputers.json"
+    var myChart12 = "ONS_Inflation_HousingCosts.json"
+    var myChart13 = "ONS_Inflation_RetirementHomes.json"
+    var myChart14 = "ONS_Inflation_Pets.json"
+    var myChart15 = "ONS_Inflation_Travel&Transport.json"
+    var myChart16 = "ONS_Inflation_Hairdressing.json"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -83,6 +104,18 @@
     vegaEmbed('#Chart5', myChart5);
     vegaEmbed('#Chart6', myChart6);
     vegaEmbed('#Chart7', myChart7);
+    vegaEmbed('#Chart8', myChart8);
+    vegaEmbed('#Chart9', myChart9);
+    vegaEmbed('#Chart10', myChart10);
+    vegaEmbed('#Chart11', myChart11);
+    vegaEmbed('#Chart12', myChart12);
+    vegaEmbed('#Chart13', myChart13);
+    vegaEmbed('#Chart14', myChart14);
+    vegaEmbed('#Chart15', myChart15);
+    vegaEmbed('#Chart16', myChart16);
+
+
+
 </script>
 
 </html>

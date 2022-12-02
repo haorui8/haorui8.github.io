@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/data_ONS-L5JZ.json",
+       "format": {
+           "type":"json",
+           "property": "months"}},
+
+
+    "title": {
+        "text": "Travel & Transport Services",
+        "subtitle": "CPIH, Index: 2015=100",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+
+    "width":150,
+    "height":150,
+
+    "mark":{
+        "type": "line",
+        "color": "rgb( 0, 47, 167)",
+        "strokeWidth":2,
+        "opacity":1},
+ 
+
+    "encoding": {
+      "x": {
+          "field": "date",
+          "type": "temporal",
+          "title":"Time"},
+      "y": {
+          "field": "value",
+          "type": "quantitative",
+          "title":"Index"}
+    }
+}
