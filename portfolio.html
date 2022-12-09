@@ -74,7 +74,22 @@
     </div>
 
     <window class="innerwidth"></window>
+
+    <div class="myWeek6">
+        <h1>READING WEEK</h1>
+    </div>
+
+    <div class="myWeek7">
+        <h1>Week 7</h1>
+        <h3>Map of England divided into regions</h3>
+        <div class="chart" id="Chart17"> </div>
+
+        <h3>Regional happiness rating in England</h3>
+        <div class="chart" id="Chart18"> </div>
+        <p>The map above shows the average happiness of regions via survey conducted by ONS asking individuals: "overall, how 'happy' did you feel yesterday, 0 to 10?"</p>
+    </div>
 </body>
+
 
 
 <script>
@@ -95,6 +110,8 @@
     var myChart14 = "ONS_Inflation_Pets.json"
     var myChart15 = "ONS_Inflation_Travel&Transport.json"
     var myChart16 = "ONS_Inflation_Hairdressing.json"
+    var myChart17 = "EnglandRegionMap.topojson"
+    var myChart18 = "EnglandRegionMapHappiness.topojson"
 
     // Embed charts:
     vegaEmbed('#Chart1', myChart1);
@@ -113,6 +130,8 @@
     vegaEmbed('#Chart14', myChart14);
     vegaEmbed('#Chart15', myChart15);
     vegaEmbed('#Chart16', myChart16);
+    vegaEmbed('#Chart17', myChart17);
+    vegaEmbed('#Chart18', myChart18);
 
 
 

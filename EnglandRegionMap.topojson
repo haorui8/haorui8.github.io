@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data": {
+      "url":"https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/EnglandElectoralRegions.json",
+      "format": {
+          "type": "topojson",
+          "feature":"eer"}
+      },
+  
+      "height": 600,
+      "width": 600,
+  
+      "projection": {
+          "type":"mercator"
+      },
+  
+      "mark":{
+          "type":"geoshape",
+          "color":"palegreen",
+          "stroke":"red"
+      },
+  
+    "encoding":{
+    "tooltip":[
+      {"field":"properties.EER13NM", "type":"nominal", "title":"Region"}]
+    }
+  }

@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data": {
+      "url":"https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/EnglandElectoralRegions.json",
+      "format": {
+          "type": "topojson",
+          "feature":"eer"}
+      },
+  
+      "height": 600,
+      "width": 600,
+  
+      "projection": {
+          "type":"mercator"
+      },
+  
+      "mark":{
+          "type":"geoshape",
+          "stroke":"red"
+      },
+  
+    "encoding":{
+      "color":{
+          "field": "Average rating of happiness",
+          "type": "quantitative"
+      },
+    "tooltip":[
+      {"field":"properties.EER13NM", "type":"nominal", "title":"Region"},
+      {"field":"Average rating of happiness", "type":"nominal", "title":"Average Happiness"}]
+    },
+  
+  "transform": [
+      {"lookup": "properties.EER13NM",
+      "from":{
+          "data":{
+              "url":"https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/HappinessEngland.csv"
+          },
+          "key": "Region",
+          "fields": ["Average rating of happiness"]
+      }
+      }
+  
+  ]
+  }
