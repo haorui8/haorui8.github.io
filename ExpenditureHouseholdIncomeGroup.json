@@ -1,0 +1,42 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title":{
+      "text": "Average Expenditure on Household by Income decile group",
+      "color":"black"
+    },
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/ExpenditureOnHouseholdByIncomeDecileGroup.csv"
+    },
+  
+    "mark":{
+      "type": "bar",
+      "color":"mediumpurple"
+      },
+  
+    "height":500,
+    "width": 750,
+
+  "encoding": {
+    "x":{
+      "field":"Gross income decile group",
+      "type": "nominal",
+      "title":null,
+      "axis":{
+        "labelAngle":45
+      }
+    },
+  
+    "y":{
+      "field":"Average weekly household expenditure (�)",
+      "type": "quantitative",
+      "title":"Sterling, Pound £"
+    },
+  
+    "tooltip":[
+      {"field":"Number of recording households in sample", "type": "nominal", "title":"No. of households in sample"}
+    ]
+  }
+  
+  }
