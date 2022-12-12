@@ -1,0 +1,58 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":{
+      "text": "Share of consumer expenditure on food vs GDP per capita",
+      "subtitle":["Food expenditure relates only to food consumed at home, excluding alcohol and tobacco"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "color":"black"
+      },
+  
+  "data":{
+    "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/ExpenditureOnFoodvsGDPPerCapitaCleaned.csv",
+    "format":{"type": "csv"}
+  },
+  
+      "mark": {
+        "type":"circle",
+        "size": 150,
+        "color":"rgb(0,67,167)",
+        "opacity":0.6},
+  
+        "height":500,
+        "width":750,
+  
+        "encoding": {
+          "x":{
+            "field":"GDP per capita, PPP (constant 2017 international $)",
+            "type":"quantitative",
+            "scale":{"domain":[1000, 100000]},
+            "title": "GDP per capita, PPP (constant 2017, $)"},
+  
+            "y":{
+              "field":"Share of consumer expenditure on food (USDA (2017))",
+              "type": "quantitative",
+              "title": "% of consumer expenditure on food"},
+  
+              "color":{
+                "field":"Year",
+                "type": "nominal",
+                "scale": {"scheme":"set1"},
+                "legend": {"orient":"top-right"}
+              },
+  
+              "size":{
+                "field":"Population (historical estimates)",
+                "type": "quantitative",
+                "title":"Population",
+                "scale": {"range":[100, 2000]},
+                "legend":{"orient": "bottom"}
+              },
+  
+              "tooltip":[
+                {"field":"Country Name", "type":"ordinal", "title":"Country"},
+                {"field":"Year", "type": "ordinal", "title":"Year"}
+              ]
+        }
+  
+  }
