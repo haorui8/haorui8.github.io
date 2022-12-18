@@ -37,7 +37,7 @@
               "color":{
                 "field":"Year",
                 "type": "nominal",
-                "scale": {"scheme":"set1"},
+                "scale": {"scheme":"set2"},
                 "legend": {"orient":"top-right"}
               },
   
