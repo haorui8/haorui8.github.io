@@ -1,0 +1,151 @@
+Mean Happiness Rating,Region,City,All persons,Male,Female,"Male admissions per 100,000 of population ","Female admissions per 100,000 of population"
+7.16,North East,County Durham,11745,4575,7170,1743,2639
+7.45,North East,Darlington,2115,745,1370,1438,2533
+7.22,North East,Gateshead,2565,925,1640,947,1586
+7.39,North East,Hartlepool,1950,725,1230,1617,2605
+7.30,North East,Middlesbrough,980,405,575,664,876
+7.24,North East,Newcastle upon Tyne,4095,1755,2340,1492,1725
+7.31,North East,North Tyneside,3960,1635,2325,1632,2131
+7.45,North East,Northumberland,6380,2590,3790,1476,2260
+7.35,North East,Redcar and Cleveland,875,340,535,504,737
+7.13,North East,South Tyneside,2070,855,1215,1184,1551
+7.48,North East,Stockton-on-Tees,3320,1185,2135,1275,2184
+7.27,North East,Sunderland,6585,2735,3850,2066,2646
+7.30,North West,Blackburn with Darwen,4070,1290,2775,2017,4037
+7.31,North West,Blackpool,3620,1285,2335,1865,3390
+7.32,North West,Bolton,2735,1185,1550,910,1124
+7.41,North West,Bury,2625,960,1660,1096,1736
+7.61,North West,Cheshire East,6875,2435,4435,1224,2394
+7.40,North West,Cheshire West and Chester,6990,2340,4650,1363,2726
+7.42,North West,Cumbria,8450,3305,5145,1221,2027
+7.13,North West,Halton,2740,1030,1705,1679,2606
+7.10,North West,Knowsley,2855,910,1945,1361,2469
+7.43,North West,Lancashire,25330,9900,15430,1654,2502
+6.96,North West,Liverpool,9500,2490,7005,1239,2762
+7.18,North West,Manchester,9660,2845,6815,1634,2850
+7.12,North West,Oldham,3335,1135,2200,1114,1926
+7.26,North West,Rochdale,3620,1260,2360,1277,2167
+7.22,North West,Salford,7050,2660,4390,2544,3676
+7.28,North West,Sefton,4540,1625,2915,1149,2120
+7.10,North West,St. Helens,2585,1025,1560,1142,1714
+7.49,North West,Stockport,7545,2955,4590,2097,3064
+7.26,North West,Tameside,3070,1290,1780,1203,1592
+7.45,North West,Trafford,4095,1525,2570,1453,2230
+7.44,North West,Warrington,3730,1495,2235,1469,2134
+7.35,North West,Wigan,9905,4080,5825,2557,3538
+7.21,North West,Wirral,13000,4700,8300,2943,5095
+7.26,Yorkshire and the Humber,Barnsley,4285,1705,2580,1390,2053
+7.34,Yorkshire and the Humber,Bradford,16090,6160,9930,2794,3980
+7.44,Yorkshire and the Humber,Calderdale,4215,1455,2760,1426,2638
+7.35,Yorkshire and the Humber,Doncaster,5785,1885,3900,1248,2513
+7.44,Yorkshire and the Humber,East Riding of Yorkshire,6320,2545,3780,1309,2120
+7.22,Yorkshire and the Humber,"Kingston upon Hull, City of",3290,975,2310,870,1763
+7.25,Yorkshire and the Humber,Kirklees,7750,2215,5535,1090,2575
+7.33,Yorkshire and the Humber,Leeds,7670,2395,5275,746,1325
+7.30,Yorkshire and the Humber,North East Lincolnshire,2615,1045,1570,1334,1979
+7.54,Yorkshire and the Humber,North Lincolnshire,2140,865,1275,959,1440
+7.50,Yorkshire and the Humber,North Yorkshire,13030,5390,7635,1604,2421
+7.28,Yorkshire and the Humber,Rotherham,7385,2575,4810,2008,3626
+7.27,Yorkshire and the Humber,Sheffield,7655,2820,4840,1125,1738
+7.31,Yorkshire and the Humber,Wakefield,8175,2410,5765,1434,3267
+7.31,Yorkshire and the Humber,York,7060,2635,4425,2876,4159
+7.45,East Midlands,Derby,7515,2390,5125,2209,4155
+7.43,East Midlands,Derbyshire,22355,8065,14290,1942,3478
+7.35,East Midlands,Leicester,5790,1445,4345,1106,2650
+7.53,East Midlands,Leicestershire,14405,4815,9585,1385,2705
+7.45,East Midlands,Lincolnshire,14770,5310,9460,1334,2471
+7.39,East Midlands,Northamptonshire,23865,8805,15060,2538,4124
+7.23,East Midlands,Nottingham,8780,2530,6250,2204,4179
+7.38,East Midlands,Nottinghamshire,25740,9350,16385,2263,3904
+7.55,East Midlands,Rutland                                                                         ,480,170,310,766,1708
+7.20,West Midlands,Birmingham,15755,4230,11525,1005,2158
+7.35,West Midlands,Coventry,8190,2605,5585,1917,3432
+7.24,West Midlands,Dudley,6765,1930,4835,1244,3037
+7.49,West Midlands,"Herefordshire, County of",3555,1290,2270,1233,2411
+7.36,West Midlands,Sandwell,5585,1705,3880,1243,2447
+7.54,West Midlands,Shropshire,6410,2590,3820,1449,2312
+7.45,West Midlands,Solihull,2875,910,1965,876,1857
+7.41,West Midlands,Staffordshire,25975,8950,17020,1984,3823
+7.15,West Midlands,Stoke-on-Trent,8200,1795,6405,1543,4985
+7.26,West Midlands,Telford and Wrekin,4165,1475,2690,1846,3075
+7.47,West Midlands,Walsall,7370,2060,5305,1638,3750
+7.52,West Midlands,Warwickshire,11450,4275,7175,1502,2469
+6.99,West Midlands,Wolverhampton,7375,2045,5335,1799,4119
+7.47,West Midlands,Worcestershire,16315,6535,9775,2123,3161
+7.33,East,Bedford,2460,960,1500,1222,1757
+7.35,East,Cambridgeshire,7845,3075,4770,989,1493
+7.49,East,Central Bedfordshire,4795,1660,3130,1234,2181
+7.41,East,Essex,17440,6425,11015,884,1466
+7.43,East,Hertfordshire,17380,6170,11210,1174,1909
+7.31,East,Luton,5085,1470,3615,1779,3648
+7.53,East,Norfolk,16320,5785,10480,1217,2294
+7.31,East,Peterborough,2430,835,1595,983,1655
+7.39,East,Southend-on-Sea,1745,560,1185,639,1275
+7.48,East,Suffolk,15975,5705,10270,1449,2726
+7.30,East,Thurrock,1895,565,1335,797,1549
+7.22,London,Barking and Dagenham,3845,1205,2635,1673,2772
+7.42,London,Barnet,4140,1430,2710,928,1417
+7.24,London,Bexley,3975,1585,2390,1514,1923
+7.31,London,Brent,7045,2345,4700,1853,3120
+7.48,London,Bromley,4790,1670,3120,1145,1828
+7.21,London,Camden,1840,645,1190,662,1035
+7.18,London,Croydon,4935,1595,3340,990,1745
+7.45,London,Ealing,8015,2895,5115,2166,3268
+7.42,London,Enfield,3940,1375,2565,1065,1609
+7.24,London,Greenwich,4160,1450,2710,1404,2106
+7.08,London,Hackney,5845,1560,4285,2018,3815
+7.17,London,Hammersmith and Fulham,3705,1230,2475,2015,3190
+7.28,London,Haringey,2625,850,1775,896,1486
+7.39,London,Harrow,4435,1585,2850,1472,2390
+7.13,London,Havering,3850,1520,2330,1338,1775
+7.25,London,Hillingdon,3860,1510,2350,1196,1616
+7.40,London,Hounslow,4015,1505,2515,1410,2112
+7.04,London,Islington,2270,805,1465,1150,1658
+7.56,London,Kensington and Chelsea,1980,875,1105,1314,1433
+7.50,London,Kingston upon Thames,1580,655,925,922,1136
+7.21,London,Lambeth,8645,3075,5575,3156,4302
+7.30,London,Lewisham,4990,1735,3255,1673,2301
+7.29,London,Merton,2375,935,1440,1245,1459
+7.43,London,Newham,8625,2910,5715,2892,4427
+7.33,London,Redbridge,4800,1770,3025,1518,2193
+7.43,London,Richmond upon Thames,1620,720,900,861,931
+7.34,London,Southwark,9760,3510,6255,3464,4711
+7.35,London,Sutton,2475,770,1700,878,1651
+7.37,London,Tower Hamlets,6415,2070,4345,2410,4016
+7.24,London,Waltham Forest,6180,2095,4085,2214,3347
+7.36,London,Wandsworth,3430,1405,2025,1404,1515
+7.21,London,Westminster,4005,1680,2325,1660,2044
+7.28,South East,Bracknell Forest,935,335,600,628,1020
+7.29,South East,Brighton and Hove,2155,820,1335,702,1020
+7.44,South East,Buckinghamshire,6270,2475,3795,971,1424
+7.40,South East,East Sussex,8980,3550,5430,1208,1882
+7.56,South East,Hampshire,19405,7480,11920,1082,1689
+7.59,South East,Isle of Wight,3005,1215,1790,1488,2316
+7.39,South East,Kent,24180,9960,14220,1309,1791
+7.30,South East,Medway,5510,2040,3475,1675,2559
+7.32,South East,Milton Keynes,4235,1310,2920,1172,2279
+7.42,South East,Oxfordshire,5060,1710,3350,541,991
+7.44,South East,Portsmouth,3150,1065,2090,1226,2127
+7.44,South East,Reading,1175,425,745,666,1035
+7.13,South East,Slough,3030,1100,1925,2100,3155
+7.39,South East,Southampton,7875,2790,5085,2945,4631
+7.51,South East,Surrey,11430,4285,7145,765,1234
+7.51,South East,West Berkshire,1020,425,595,546,775
+7.55,South East,West Sussex,13230,5170,8055,1189,1833
+7.47,South East,Windsor and Maidenhead,2175,895,1275,1271,1732
+7.57,South East,Wokingham,1010,375,635,480,772
+7.54,South West,Bath and North East Somerset,2715,930,1785,1083,1873
+7.27,South West,"Bournemouth, Christchurch and Poole",7390,3025,4365,1558,2160
+7.17,South West,"Bristol, City of",9590,2715,6875,1624,3024
+7.50,South West,Cornwall,15010,5255,9755,1734,3464
+7.47,South West,Devon,8410,3165,5245,729,1268
+7.56,South West,Dorset,4575,1850,2720,836,1356
+7.39,South West,Gloucestershire,21930,8795,13130,2759,4146
+7.44,South West,North Somerset,3770,1100,2675,992,2618
+7.32,South West,Plymouth,5365,1980,3385,1669,2633
+7.42,South West,Somerset,8820,3080,5740,1038,2117
+7.44,South West,South Gloucestershire,6750,1990,4755,1496,3318
+7.35,South West,Swindon,2965,1000,1965,981,1818
+7.36,South West,Torbay,2905,1000,1905,1339,2845
+7.50,South West,Wiltshire,8290,3090,5200,1224,2139
+,,,,,,,
