@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/McDonaldsVsBMI.csv"},
+  
+      "title":{
+        "text":"BMI and Number of Mcdonalds in each UK Region",
+        "subtitle":"Number of McDonalds' from 2017 and mean BMI from 2011",
+        "subtitleFontSize":9,
+        "anchor": "start",
+        "subtitleFontStyle":"italic"
+      },
+  
+  "height":300,
+  "width":300,
+  
+  "layer":[{
+        "mark":{
+          "type":"circle",
+          "color":"yellow",
+          "size":150
+        },
+        "encoding": {
+          "x":{
+            "field":"Number of Mcdonalds (2017)",
+            "type": "quantitative",
+            "scale":{"domain":[50,190]},
+            "title": "Number of McDonalds'"
+          },
+          "y":{
+            "field":"Mean BMI (2011)",
+            "type": "quantitative",
+            "scale":{"domain":[26.4,27.5]},
+            "title":"BMI"
+          },
+          "tooltip":[
+            {"field":"Region"}
+          ]
+        }
+      },
+      {
+        "mark":{
+          "type": "line",
+          "color":"red"
+        },
+        "transform": [{
+          "regression": "Mean BMI (2011)", "on":"Number of Mcdonalds (2017)"}],
+          "encoding": {
+            "x":{
+              "field":"Number of Mcdonalds (2017)",
+            "type":"quantitative"},
+            "y":{
+              "field":"Mean BMI (2011)",
+              "type": "quantitative"
+            }
+          }
+      }
+      ]
+  }
