@@ -43,7 +43,12 @@
       "type": "nominal",
       "scale":{"scheme":"set1"},
       "legend":{"orient": "top-right"}
-    }
+    },
+
+    "tooltip":[
+      {"field":"City", "type": "nominal", "title":"Area"},
+      {"field":"Region", "type": "nominal"}
+    ]
   
   }
   
