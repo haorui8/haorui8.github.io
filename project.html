@@ -7,17 +7,22 @@
     <title>Project</title>
 
     <link rel="stylesheet" href="project.css">
-        <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 </head>
+
+
 <body>
 <h1>Is Obesity Correlated with Happiness? </h1>
 
 <div class="wrap"> 
 
 <p>It seems intuitive that the more obese someone is, the less happier they become. Obesity is becoming more prevalent through time and this could cause a lot of problems such as physical or mental health problems which can affect one's happiness. In the UK, the number of obese male and females is rapidly increasing, shown by Figure 1 below. </p>
-<div class="chart" id="Chart1"></div>
+<div class="chart" id="Chart1"> </div>
+<h3>Figure 1</h3>
+
 
 </div>
 
@@ -25,7 +30,7 @@
 
 <script>
 
-var Figure1 = "ObesityMaleFemale.json"
+var Figure1 = "ObesityMaleFemale.json";
 
 vegaEmbed('#Chart1', Figure1);
 

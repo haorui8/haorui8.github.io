@@ -17,6 +17,7 @@ h1, h3, p{
     border-style: solid;
     border-radius: 10px;
     border-color: grey;
+    text-align: center;
 }
 
 .wrap{

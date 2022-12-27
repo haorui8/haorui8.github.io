@@ -46,8 +46,8 @@
     },
 
     "tooltip":[
-      {"field":"City", "type": "nominal", "title":"Area"},
-      {"field":"Region", "type": "nominal"}
+      {"field":"Region", "type": "nominal"},
+      {"field":"City", "type": "nominal"}
     ]
   
   }
