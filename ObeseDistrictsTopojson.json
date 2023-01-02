@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/EnglandDistricsMap.json",
+      "format":{
+        "type": "topojson",
+        "feature": "lad"
+      }
+    },
+    "title": "Amount of Obese Admissions per 100k of Population",
+  
+    "width":400,
+    "height":400,
+  
+    "projection": {
+      "type":"mercator"
+    },
+  
+    "mark":{
+      "type":"geoshape",
+      "stroke": "black",
+      "strokeWidth": 0.5
+    },
+  
+    "transform": [{
+      "lookup": "properties.LAD13NM",
+      "from":{
+        "data":{
+          "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/DistrictObesity.csv"
+        },
+        "key": "District",
+        "fields": ["Admissions per 100k of population"]
+      }
+    }],
+  
+    "encoding": {
+      "tooltip":[
+        {"field":"properties.LAD13NM", "type": "nominal", "title":"District"},
+        {"field":"Admissions per 100k of population", "type": "nominal", "title":"Obese admissions per 100k"}
+    ],
+    "color":{
+      "field":"Admissions per 100k of population",
+      "type": "quantitative",
+      "title": "Obese Admissions per 100k"
+    }
+    }
+  
+  }
+  

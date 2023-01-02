@@ -22,6 +22,40 @@ h1, h3, p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
+
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#link3{
+  background-color: rgba(185, 185, 20, .5);
+
+  padding:20px;
+  
+  border:2px;
+  border-color:whi;
+  border-style: solid;
+  border-radius: 10px;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:700;
+  color:white;
+  
+  text-decoration: none;
+  
+}
+
+#link3:hover{
+
+  background-color: rgba(185, 185, 20, .8);
+
+  border:2px;
+  border-color:rgb(220, 220, 30);
+  border-style: solid;
+  
+}
     
 .myWeek1{
     margin: auto;

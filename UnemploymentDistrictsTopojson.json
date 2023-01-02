@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/EnglandDistricsMap.json",
+      "format":{
+        "type": "topojson",
+        "feature": "lad"
+      }
+    },
+    "title": "Unemployment Benefit Claimants",
+  
+    "width":400,
+    "height":400,
+  
+    "projection": {
+      "type":"mercator"
+    },
+  
+    "mark":{
+      "type":"geoshape",
+      "stroke": "black",
+      "strokeWidth": 0.5
+    },
+  
+    "transform": [{
+      "lookup": "properties.LAD13NM",
+      "from":{
+        "data":{
+          "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/UnemploymentClaimantAccount.csv"
+        },
+        "key": "Geography",
+        "fields": ["Proportion of people claiming"]
+      }
+    }],
+  
+    "encoding": {
+      "tooltip":[
+        {"field":"properties.LAD13NM", "type": "nominal", "title":"District"},
+        {"field":"Proportion of people claiming", "type": "nominal", "title":"Proportion of Claimants"}
+    ],
+    "color":{
+      "field":"Proportion of people claiming",
+      "type": "quantitative"
+    }
+    }
+  
+  }
+  

@@ -1,0 +1,50 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/EnglandDistricsMap.json",
+      "format":{
+        "type": "topojson",
+        "feature": "lad"
+      }
+    },
+  
+    "width":400,
+    "height":400,
+
+    "title":"Happiness by District",
+  
+    "projection": {
+      "type":"mercator"
+    },
+  
+    "mark":{
+      "type":"geoshape",
+      "stroke": "black",
+      "strokeWidth": 0.5
+    },
+  
+    "transform": [{
+      "lookup": "properties.LAD13NM",
+      "from":{
+        "data":{
+          "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/HappinessDistrict.csv"
+        },
+        "key": "Areanames",
+        "fields": ["Average Happiness Rating"]
+      }
+    }],
+  
+    "encoding": {
+      "tooltip":[
+        {"field":"properties.LAD13NM", "type": "nominal", "title":"District"},
+        {"field":"Average Happiness Rating", "type": "nominal", "title":"Average Happiness Rating"}
+    ],
+    "color":{
+      "field":"Average Happiness Rating",
+      "type": "quantitative"
+    }
+    }
+  
+  }
+  

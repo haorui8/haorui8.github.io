@@ -15,15 +15,32 @@
 
 
 <body>
+    <div class="links">
+        <a href="index.html" id="link3">Home</a>
+        <a href="portfolio.html" id="link3">Portfolio</a>
+        <a href="aboutme.html" id="link3">About Me</a>
+    </div>
+
 <h1>Is Obesity Correlated with Happiness? </h1>
 
 <div class="wrap"> 
 
-<p>It seems intuitive that the more obese someone is, the less happier they become. Obesity is becoming more prevalent through time and this could cause a lot of problems such as physical or mental health problems which can affect one's happiness. In the UK, the number of obese male and females is rapidly increasing, shown by Figure 1 below. </p>
-<div class="chart" id="Chart1"> </div>
-<h3>Figure 1</h3>
-
-
+<p>It seems intuitive that the more obese someone is, the less happy they become. Obesity is becoming more prevalent through time and this could cause a lot of problems such as physical or mental health issues which can affect one's happiness. In the UK, the number of obese people is rapidly increasing, shown by Figure 1 below. </p>
+<div class="chart" id="Chart1"> </div> 
+<h3>Figure 1</h3> 
+<p>The distinction between primary and secondary admissions is that for primary, the contributing factor of the admission is obesity and secondary is when obesity is not necessarily the contributing factor but relevant to a patient's episode of care. There are more females that are obese than males but the rate of increase for both genders is similar, shown by the slope of both lines. The trend of obesity over time is quite concerning considering the amount of obese females increased by nearly seven folds and males nearly four folds between 2009 to 2020. Hence, I wondered if the levels of happiness in England has a negative correlation with obesity. Figure 2 shows the direct correlation between obesity and happiness. </p>
+<div class="chart" id="Chart2"> </div>
+<h3>Figure 2</h3>
+<p>The information of obesity and happiness for different English counties are sourced from NHS digital and WHO respectively. I want to see the direct correlation so I combined the data into a single graph and regressed happiness rating to number of obese persons. The result shows a positive correlation between happiness and obesity. However, this positive correlation is weak due to the huge spread of the data points, with many far away from the regression line. This approach of exploring the relationship between obesity and happiness is not accurate because the happiness index is the mean of all people living in an area and the ratio of obese people to the entire population of the area is not considered. Furthermore, obesity is not the only factor that effects happiness so other factors were taken into account in the Figure 2 regression. We do not have enough evidence to conclude there is a slight positive correlation between happiness and obesity in England.</p>
+<p>Therefore, I am going to approach the question in a different way, by first, observing how two economic factors - unemployment and income correlate with happiness, then observe how the two factors correlate with obesity in the UK. Below are maps of the UK, divided into districts that show the prevalence of these factors.</p>
+<div class="chart" id="Chart3"> </div>
+<h3>Figure 3</h3>
+<div class="chart" id="Chart4"> </div>
+<h3>Figure 4</h3>
+<div class="chart" id="Chart5"> </div>
+<h3>Figure 5</h3>
+<div class="chart" id="Chart6"> </div>
+<h3>Figure 6</h3>
 </div>
 
 </body>
@@ -31,8 +48,18 @@
 <script>
 
 var Figure1 = "ObesityMaleFemale.json";
+var Figure2 = "ObesityVsHappiness.json";
+var Figure3 = "HappinessDistrictTopojson.json";
+var Figure4 = "IncomeDistrictsTopojson.json";
+var Figure5 = "UnemploymentDistrictsTopojson.json";
+var Figure6 = "ObeseDistrictsTopojson.json";
 
 vegaEmbed('#Chart1', Figure1);
+vegaEmbed('#Chart2', Figure2);
+vegaEmbed('#Chart3', Figure3);
+vegaEmbed('#Chart4', Figure4);
+vegaEmbed('#Chart5', Figure5);
+vegaEmbed('#Chart6', Figure6);
 
 </script>
 
