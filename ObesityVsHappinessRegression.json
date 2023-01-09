@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title":{
+    "text":"Number of obese persons and average happiness of counties in England",
+    "subtitle":"Exploring the correlation between obesity and happiness",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+
+"data":{
+  "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/ObesityVsHappiness.csv",
+  "format":{"type": "csv"}
+},
+
+"height": 500,
+"width": 700,
+
+"layer":[{
+"mark":{
+  "type": "circle",
+  "size": 100,
+  "opacity": 0.5
+},
+
+"encoding": {
+  "x":{
+    "field":"Obese persons",
+    "type": "quantitative",
+    "scale":{"domain":[0, 18000]},
+    "title": "Number of obese persons (2019/2020)"
+  },
+
+  "y":{
+    "field":"Mean Happiness Rating",
+    "type": "quantitative",
+    "scale":{"domain":[6.9, 7.7]},
+    "title":"Happiness rating: 0 to 10 (mean)"
+  },
+
+  "color":{
+    "field":"Gender",
+    "type": "nominal",
+    "scale":{"scheme":"set1"},
+    "legend":{"orient": "top-right"}
+  },
+
+  "tooltip":[
+    {"field":"Region", "type": "nominal"},
+    {"field":"City", "type": "nominal", "title":"District"}
+  ]
+}
+},
+{"mark":{
+  "type": "line",
+  "color":"purple"
+},
+"transform": [{
+  "regression": "Obese persons", "on": "Mean Happiness Rating"
+}],
+"encoding": {
+  "x":{
+      "field":"Obese persons",
+      "type": "quantitative"
+  },
+  "y":{
+      "field":"Mean Happiness Rating",
+      "type": "quantitative"
+  }
+}
+}
+]
+
+}

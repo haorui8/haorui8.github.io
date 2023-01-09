@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/Regression.csv",
+      "format":{"type": "csv"}
+    },
+  
+  "title":{
+    "text":"Obesity and Proportion of Unemployment Benefit Claimants",
+    "subtitle":"Exploring the relationship between unemployment and obesity",
+    "subtitleFontStyle":"italic",
+    "anchor": "start",
+    "subtitleFontSize":10
+  },
+  
+  "height":400,
+  "width":400,
+  
+  "layer":[{
+    "mark":{
+      "type": "circle",
+      "size":90,
+      "opacity":0.5,
+      "color":"purple"
+    },
+  
+    "encoding": {
+      "x":{
+        "field":"Obesity Admissions per 100k of population",
+        "type": "quantitative",
+        "scale":{"domain":[0,100]}
+      },
+      "y":{
+        "field":"Proportion of people claiming unemployment benefits",
+        "type": "quantitative",
+        "scale":{"domain":[0, 10]}
+      },
+      "tooltip":[{"field":"Disticts", "type": "nominal", "title":"District"}]
+    }
+    
+    },
+    {
+      "mark":{
+      "type": "line",
+      "color":"blue"
+    },
+    "transform": [
+      {"regression": "Obesity Admissions per 100k of population", "on": "Proportion of people claiming unemployment benefits"}],
+    "encoding": {
+      "x":{
+        "field":"Obesity Admissions per 100k of population",
+        "type": "quantitative"
+      },
+      "y":{
+        "field":"Proportion of people claiming unemployment benefits",
+        "type": "quantitative"
+      }
+    }
+    }
+    ]
+  }

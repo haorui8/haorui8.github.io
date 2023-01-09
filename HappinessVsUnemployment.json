@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data":{
+    "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/Regression.csv",
+    "format":{"type": "csv"}
+  },
+
+"title":{
+  "text":"Happiness and Proportion of Unemployment Benefit Claimants",
+  "subtitle":"Exploring the relationship between unemployment and happiness",
+  "subtitleFontStyle":"italic",
+  "anchor": "start",
+  "subtitleFontSize":10
+},
+
+"height":400,
+"width":400,
+
+"layer":[{
+  "mark":{
+    "type": "circle",
+    "size":90,
+    "opacity":0.5,
+    "color":"orange"
+  },
+
+  "encoding": {
+    "x":{
+      "field":"Average Happiness Rating",
+      "type": "quantitative",
+      "scale":{"domain":[6.8,7.8]}
+    },
+    "y":{
+      "field":"Proportion of people claiming unemployment benefits",
+      "type": "quantitative",
+      "scale":{"domain":[0, 10]}
+    },
+    "tooltip":[{"field":"Disticts", "type": "nominal", "title":"District"}]
+  }
+  
+  },
+  {
+    "mark":{
+    "type": "line",
+    "color":"blue"
+  },
+  "transform": [
+    {"regression": "Average Happiness Rating", "on": "Proportion of people claiming unemployment benefits"}],
+  "encoding": {
+    "x":{
+      "field":"Average Happiness Rating",
+      "type": "quantitative"
+    },
+    "y":{
+      "field":"Proportion of people claiming unemployment benefits",
+      "type": "quantitative"
+    }
+  }
+  }
+  ]
+}

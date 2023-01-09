@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/haorui8/haorui8.github.io/main/Project/Regression.csv",
+      "format":{"type": "csv"}
+    },
+  
+  "title":{
+    "text":"Happiness and Gross Disposable Household Income",
+    "subtitle":"Exploring the relationship between income and happiness",
+    "subtitleFontStyle":"italic",
+    "anchor": "start",
+    "subtitleFontSize":10
+  },
+  
+  "height":400,
+  "width":400,
+  
+  "layer":[{
+    "mark":{
+      "type": "circle",
+      "size":90,
+      "opacity":0.5,
+      "color":"orange"
+    },
+  
+    "encoding": {
+      "x":{
+        "field":"Average Happiness Rating",
+        "type": "quantitative",
+        "scale":{"domain":[6.8,7.8]}
+      },
+      "y":{
+        "field":"Gross Disposable Household Income per head",
+        "type": "quantitative",
+        "scale":{"domain":[10000, 65000]}
+      },
+      "tooltip":[{"field":"Disticts", "type": "nominal", "title":"District"}]
+    }
+    
+    },
+    {
+      "mark":{
+      "type": "line",
+      "color":"blue"
+    },
+    "transform": [
+      {"regression": "Average Happiness Rating", "on": "Gross Disposable Household Income per head"}],
+    "encoding": {
+      "x":{
+        "field":"Average Happiness Rating",
+        "type": "quantitative"
+      },
+      "y":{
+        "field":"Gross Disposable Household Income per head",
+        "type": "quantitative"
+      }
+    }
+    }
+    ]
+  }
