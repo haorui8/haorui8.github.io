@@ -25,22 +25,75 @@
 
 <div class="wrap"> 
 
-<p>It seems intuitive that the more obese someone is, the less happy they become. Obesity is becoming more prevalent through time and this could cause a lot of problems such as physical or mental health issues which can affect one's happiness. In the UK, the number of obese people is rapidly increasing, shown by Figure 1 below. </p>
-<div class="chart" id="Chart1"> </div> 
+<p>Obesity is becoming more prevalent through time and this could be a problem for England in the future. Obesity can cause physical and mental health issues which could impact happiness. In the UK, the number of obese people is increasing exponentially, depicted by Figure 1. </p>
+
+<div class="links">
+<div id="Chart1"> </div>
+</div> 
 <h3>Figure 1</h3> 
-<p>The distinction between primary and secondary admissions is that for primary, the contributing factor of the admission is obesity and secondary is when obesity is not necessarily the contributing factor but relevant to a patient's episode of care. There are more females that are obese than males but the rate of increase for both genders is similar, shown by the slope of both lines. The trend of obesity over time is quite concerning considering the amount of obese females increased by nearly seven folds and males nearly four folds between 2009 to 2020. Hence, I wondered if the levels of happiness in England has a negative correlation with obesity. Figure 2 shows the direct correlation between obesity and happiness. </p>
-<div class="chart" id="Chart2"> </div>
+
+<p>When the contributing factor of the admission is obesity, it is a primary admission and a secondary admission is when obesity is not necessarily the contributing factor but relevant to a patient's episode of care. Figure 2 shows the direct correlation between obesity and happiness. </p>
+
+<div class="links">
+<div id="Chart2"> </div>
+</div>
 <h3>Figure 2</h3>
-<p>The information of obesity and happiness for different English counties are sourced from NHS digital and WHO respectively. I want to see the direct correlation so I combined the data into a single graph and regressed happiness rating to number of obese persons. The result shows a positive correlation between happiness and obesity. However, this positive correlation is weak due to the huge spread of the data points, with many far away from the regression line. This approach of exploring the relationship between obesity and happiness is not accurate because the happiness index is the mean of all people living in an area and the ratio of obese people to the entire population of the area is not considered. Furthermore, obesity is not the only factor that effects happiness so other factors were taken into account in the Figure 2 regression. We do not have enough evidence to conclude there is a slight positive correlation between happiness and obesity in England.</p>
+
+<p>The data is sourced from NHS digital and WHO. I combined two datasets onto a single graph and regressed happiness rating to the number of obese persons. The result was a weak positive correlation between happiness and obesity. This approach of exploring the relationship between obesity and happiness is not accurate because the happiness index is the mean of all people living in an area and the ratio of obese people to the entire population of the area is not considered. Furthermore, obesity is not the only factor that effects happiness so other factors were taken into account in the Figure 2 regression. We do not have enough evidence to conclude there is a slight positive correlation between happiness and obesity in England.</p>
 <p>Therefore, I am going to approach the question in a different way, by first, observing how two economic factors - unemployment and income correlate with happiness, then observe how the two factors correlate with obesity in the UK. Below are maps of the UK, divided into districts that show the prevalence of these factors.</p>
-<div class="chart" id="Chart3"> </div>
+
+<div class="links">
+<div id="Chart3"> </div>
+</div>
 <h3>Figure 3</h3>
-<div class="chart" id="Chart4"> </div>
+
+<p>Average happiness is generally lower in the South East, London and West Midland areas. It is also low in some areas in the East. People living South West from London are generally happier.</p>
+
+<div class="links">
+<div id="Chart4"> </div>
+</div>
 <h3>Figure 4</h3>
-<div class="chart" id="Chart5"> </div>
+
+<p>Gross disposable income is the highest in London. It is relatively in the central east regions of England. </p>
+
+<div class="links">
+<div id="Chart5"> </div>
+</div>
 <h3>Figure 5</h3>
-<div class="chart" id="Chart6"> </div>
+
+<p>Certain areas specifically concentrated with higher proportion of unemployment benefit claimants. London is one of the areas.</p>
+
+<div class="links">
+<div id="Chart6"> </div>
+</div>
 <h3>Figure 6</h3>
+
+<p>Obesity is especially prevalent in London and the north of England.</p>
+<p>After making summarised comments about what the data shows, I hypothesis that gross disposable income and unemployment is negatively correlated with happiness but is positively correlated with obesity. I will now directly regress disposable income and unemployment with happiness and obesity to see if my hypotheses are correct.</p>
+
+<div class="links">
+<div id="Chart7"> </div>
+<div id="Chart8"> </div>
+</div>
+<h3>Figure 7</h3>
+
+<p>1) I first regress the average rating of happiness of each district to the proportion of its population claiming unemployment benefits and have found a negative correlation. The regression line shows in general a district will be happier when there is less unemployment. Unemployed individuals could feel devastated because their income will be low and they could feel a lack of purpose in their life.
+2) By regressing the average happiness of districts to its respective gross disposable household income per head, I found a mild positive correlation. The more gross disposable income someone has, the happier they will be. This also makes intuitive sense because when someone has a lot of disposable income they can consume more luxury goods and services which will increase their well-being and therefore happiness.</p>
+
+<p>Now I will substitute happiness with obesity and see the correlation obesity has with income and unemployment. It is intuitive to assume obesity negatively correlates with happiness, so this would be true if only one factor out of unemployment and income negatively correlates with obesity.</p>
+
+<div class="links">
+<div  id="Chart9"> </div>
+<div  id="Chart10"> </div>
+</div>
+<h3>Figure 8</h3>
+
+<p>From Figure 8, we can see that areas with more obese people generally have higher proportions of unemployment claimants so there is a positive correlation between obesity and unemployment.</p>
+<p>The chart on the right shows a regression line that is almost vertical, but slightly tilted to the left. Meaning there is a slight, negative correlation between obesity and income.</p>
+<p>The last pair of regressions give us some evidence that obesity and happiness are negatively correlated; non-obese people are more likely to be happy.</p>
+<p>Challenges: I had trouble combining all 4 datasets into one csv file. I had to learn various excel commands such as deleting and replacing blank spaces, filter the data into a desirable order and manually aligning the data together.</p>
+<p>Evaluation: 1) Figure 1 regresses the mean happiness of districts on the number of obese people, instead of the proportion of obese people. Population is different between districts so proportion of obese people would be a better determinant of the impact obesity is causing in that district.</p> <p> 2) Only a portion of districts had data on happiness rating, obesity admissions, unemployment claimant and disposable household income so the regressions do not provide an exact representation of England.</p>
+
 </div>
 
 </body>
@@ -48,11 +101,15 @@
 <script>
 
 var Figure1 = "ObesityMaleFemale.json";
-var Figure2 = "ObesityVsHappiness.json";
+var Figure2 = "ObesityVsHappinessRegression.json";
 var Figure3 = "HappinessDistrictTopojson.json";
 var Figure4 = "IncomeDistrictsTopojson.json";
 var Figure5 = "UnemploymentDistrictsTopojson.json";
 var Figure6 = "ObeseDistrictsTopojson.json";
+var Figure7 = "HappinessVsUnemployment.json";
+var Figure8 = "HappinessVsIncome.json";
+var Figure9 = "ObesityVsUnemployment.json";
+var Figure10 = "ObesityVsIncome.json";
 
 vegaEmbed('#Chart1', Figure1);
 vegaEmbed('#Chart2', Figure2);
@@ -60,6 +117,10 @@ vegaEmbed('#Chart3', Figure3);
 vegaEmbed('#Chart4', Figure4);
 vegaEmbed('#Chart5', Figure5);
 vegaEmbed('#Chart6', Figure6);
+vegaEmbed('#Chart7', Figure7);
+vegaEmbed('#Chart8', Figure8);
+vegaEmbed('#Chart9', Figure9);
+vegaEmbed('#Chart10', Figure10);
 
 </script>
 
